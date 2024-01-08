@@ -52,3 +52,33 @@ For each break point, the background of .common-breakpoints must change
   height: 300px;
   background-color: blue;
 }
+
+/* Reference: https://testsigma.com/blog/css-breakpoints/ */
+
+/* Phone */
+@media (max-width: 480px) {
+  .common-breakpoints {
+    background-color: red;
+  }
+}
+
+/* Tablet */
+@media (min-width: 481px) and (max-width: 768px) {
+  .common-breakpoints {
+    background-color: green;
+  }
+}
+
+/* Small Screens */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .common-breakpoints {
+    background-color: yellow;
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  .common-breakpoints {
+    background-color: orange;
+  }
+}
